@@ -75,14 +75,14 @@ $(NAME): $(OBJS)
 # test: $(NAME)
 #	$(CC) $(FLAGS) $(FLAGS_TEST) $(MAIN) $(NAME) -o $(TEST)
 
-bonus: $(NAME)
+# bonus: $(NAME)
 
 clean:
 	$(RM) $(OBJS)
 
 fclean:	clean
-	$(RM) $(NAME) $(TEST)
+	$(RM) $(NAME) # $(TEST)
 
 re:	fclean all
 
-.PHONY: all clean fclean re bonus test
+.PHONY: all clean fclean re # bonus test
